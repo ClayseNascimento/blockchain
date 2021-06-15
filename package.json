@@ -1,26 +1,13 @@
 {
-  "name": "blockchain",
+  "name": "blockchain-challenge",
   "version": "1.0.0",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ClayseNascimento/blockchain.git"
-  },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ClayseNascimento/blockchain/issues"
-  },
-  "homepage": "https://github.com/ClayseNascimento/blockchain#readme",
-  "keywords": [],
-  "description": "",
+  "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "crypto-js": "^4.0.0"
+  },
+  "devDependencies": {
+    "jest": "^27.0.4"
   }
 }
