@@ -1,9 +1,14 @@
 {
   "name": "blockchain-challenge",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
   "author": "",
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
     "crypto-js": "^4.0.0"
   },

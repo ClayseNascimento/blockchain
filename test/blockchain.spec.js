@@ -1,4 +1,4 @@
-const Blockchain = require("../src/modules/blockchain");
+const Blockchain = require("../src/modules/Blockchain");
 
 describe ("Blockchain Test", () => {
     it("Should create genesis block (index = 0)", function(){

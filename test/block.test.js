@@ -1,4 +1,4 @@
-const Block = require("../src/modules/block");
+const Block = require("../src/modules/Block");
 
 const blockInstance = new Block(0, "21/06/2021", { amount: 5 });
 
