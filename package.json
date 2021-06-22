@@ -1,10 +1,15 @@
 {
-  "name": "blockchain-challenge",
+  "name": "my-webpack-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "My webpack project",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "build": "webpack --mode=production --node-env=production",
+    "test": "jest",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "serve": "webpack serve --open --hot --inline"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +18,19 @@
     "crypto-js": "^4.0.0"
   },
   "devDependencies": {
-    "jest": "^27.0.4"
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.5",
+    "@webpack-cli/generators": "^2.2.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.6",
+    "html-webpack-plugin": "^5.3.1",
+    "jest": "^27.0.4",
+    "mini-css-extract-plugin": "^1.6.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.3.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.39.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
   }
 }

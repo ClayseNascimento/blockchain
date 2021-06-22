@@ -1,4 +1,4 @@
-const SHA256 = require('crypto-js/sha256');
+import sha256 from 'crypto-js/sha256';
 
 class Block {
     constructor(index, timestamp, data, previousHash = '', difficulty){
@@ -12,12 +12,12 @@ class Block {
     }
 
     calculateHash() {
-      let newHash = SHA256(this.index + this.previousHash + this.timestamp + JSON.stringify(this.data) + this.nonce).toString();
+      let newHash = sha256(this.index + this.previousHash + this.timestamp + JSON.stringify(this.data) + this.nonce).toString();
 
       while(!this.isValidHashDifficulty(newHash, this.difficulty)) {
         this.nonce++;
 
-        newHash = SHA256(this.index + this.previousHash + this.timestamp + JSON.stringify(this.data) + this.nonce).toString();
+        newHash = sha256(this.index + this.previousHash + this.timestamp + JSON.stringify(this.data) + this.nonce).toString();
       }
 
       return newHash;
@@ -37,4 +37,4 @@ class Block {
     }
 }
 
-module.exports = Block;
+export { Block };

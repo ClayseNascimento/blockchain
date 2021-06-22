@@ -1,4 +1,4 @@
-const Blockchain = require("../src/modules/Blockchain");
+import { Blockchain } from "../src/modules/Blockchain";
 
 let blockchainInstance;
 

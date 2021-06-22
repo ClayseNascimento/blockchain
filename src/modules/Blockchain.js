@@ -1,4 +1,4 @@
-const Block = require('./Block');
+import { Block } from "./Block";
 
 class Blockchain{
     constructor(hashDifficulty){
@@ -37,9 +37,8 @@ class Blockchain{
 
       return true
     }
-
 }
 
-module.exports = Blockchain;
+export { Blockchain };
 
 

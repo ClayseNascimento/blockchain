@@ -1,5 +1,4 @@
-const Block = require("./modules/Block");
-const Blockchain = require("./modules/Blockchain");
+import { Blockchain } from "./modules/Blockchain";
 
 const hashDifficulty = {
   difficulty: 3
@@ -17,6 +16,3 @@ coin.chain[1].hash = coin.chain[1].calculateHash()
 console.log('Is blockchain valid? ' + coin.isChainValid())
 
 console.log(JSON.stringify(coin, null, 4))
-
-
-
