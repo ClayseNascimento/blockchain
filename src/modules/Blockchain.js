@@ -1,7 +1,7 @@
 import { Block } from "./Block";
 
 class Blockchain{
-    constructor(hashDifficulty){
+    constructor(hashDifficulty = 3){
       this.chain = [this.createGenesisBlock(hashDifficulty.difficulty)]
     }
 
