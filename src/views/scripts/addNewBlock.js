@@ -1,6 +1,6 @@
 const createEmptyBlock = () => {
   const newBlock = document.createElement("div");
-  newBlock.style.width = "42vw";
+  newBlock.style.width = "43vw";
   newBlock.style.padding = "24px";
   newBlock.style.marginBottom = "72px";
 
@@ -23,22 +23,22 @@ const fillBlock = (blockchainInstance) => {
   const fourthPart = document.createElement("div");
 
   // Parts style
-  firstPart.style.width = "40vw";
+  firstPart.style.width = "42vw";
   firstPart.style.display = "flex";
   firstPart.style.alignItems = "center";
   firstPart.style.border = "1px solid #d9d9d9";
   firstPart.style.borderRadius = "8px";
 
-  secondPart.style.width = "40vw";
+  secondPart.style.width = "42vw";
   secondPart.style.display = "flex";
   secondPart.style.alignItems = "center";
 
-  thirdPart.style.width = "40vw";
+  thirdPart.style.width = "42vw";
   thirdPart.style.display = "flex";
   thirdPart.style.alignItems = "center";
   thirdPart.style.marginTop = "-8px";
 
-  fourthPart.style.width = "40vw";
+  fourthPart.style.width = "42vw";
   fourthPart.style.display = "flex";
   fourthPart.style.alignItems = "center";
   fourthPart.style.justifyContent = "space-between";
