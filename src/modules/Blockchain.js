@@ -1,12 +1,18 @@
 import { Block } from "./Block";
 
 class Blockchain{
-    constructor(hashDifficulty = 3){
-      this.chain = [this.createGenesisBlock(hashDifficulty.difficulty)]
+    constructor(){
+      this.chain = new Array();
     }
 
-    createGenesisBlock(difficulty){
-      return new Block(0, "11/06/2021", "Genesis Block", "0", difficulty);
+    createGenesisBlock(data, difficulty){
+      const date = new Date();
+      const options = { 
+        weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric'
+      };
+      const newBlock = new Block(0, date.toLocaleDateString("pt-BR", options), data, "0", difficulty); 
+
+      this.chain.push(newBlock);
     }
 
     getLatestBlock() {

@@ -9,7 +9,7 @@ const isProduction = process.env.NODE_ENV == "production";
 const stylesHandler = MiniCssExtractPlugin.loader;
 
 const config = {
-  entry: "./src/views/index.js",
+  entry: "./src/views/scripts/index.js",
   target: "node",
   output: {
     path: path.resolve(__dirname, "dist"),
