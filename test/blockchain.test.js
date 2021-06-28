@@ -4,16 +4,12 @@ let blockchainInstance;
 
 describe ("Blockchain Test", () => {
 
-  beforeAll(() => {
-    const hashDifficulty = {
-      difficulty: 3
-    };
+  beforeAll(() => { blockchainInstance = new Blockchain() })
 
-    blockchainInstance = new Blockchain(hashDifficulty)
-  })
+  it("should be able to create a genesis block", () => {
+    blockchainInstance.createGenesisBlock("teste", 3);
 
-  it("should be able tp create a genesis block", () => {
-    expect(blockchainInstance.chain[0]).toHaveProperty("data", "Genesis Block");
+    expect(blockchainInstance.chain[0]).toHaveProperty("index", 0);
   })
 
 

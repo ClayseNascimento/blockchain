@@ -1,4 +1,4 @@
-import Block from "../src/modules/Block";
+import { Block } from "../src/modules/Block";
 
 const blockInstance = new Block(0, "21/06/2021", { amount: 5 }, "Genesis Block", 3);
 
